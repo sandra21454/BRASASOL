@@ -1,0 +1,22 @@
+<?php require_once __DIR__ . '/components/render.php'; ?>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php brasasol_render_seo(); ?>
+        <title>Devoluciones | BRASASOL</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" type="image/png" href="img/logo/brasasol-favicon.png">
+<link rel="stylesheet" href="estilos/styles.css?v=brasasol-ux-v73-20260714">
+    </head>
+    <body class="bg-black text-white standard-page">
+        <?php cargar_componente('topbar'); ?><?php cargar_componente('navbar'); ?>
+        <main>
+            <section class="page-hero page-hero-devoluciones"><div class="container page-hero-grid"><div><span class="product-kicker">Política BRASASOL</span><h1>Ventas finales, sin devolución</h1><p>El cliente debe estar completamente seguro del modelo, medidas, accesorios y condiciones antes de pagar. Una vez realizado el pago, BRASASOL no acepta devoluciones, cambios, cancelaciones ni realiza reembolsos.</p><div class="page-hero-actions"><a href="<?= htmlspecialchars(brasasol_whatsapp_url(), ENT_QUOTES, 'UTF-8') ?>" target="_blank" rel="noopener" class="btn btn-warning btn-lg rounded-pill"><i class="bi bi-whatsapp me-2"></i>Resolver una duda antes de pagar</a></div></div><div class="page-hero-media"><img src="<?= htmlspecialchars(brasasol_site_image('hero_returns','img/horno/top/top2.png'), ENT_QUOTES, 'UTF-8') ?>" alt="Cilindro BRASASOL"></div></div></section>
+            <section class="py-5 section-dark"><div class="container"><div class="page-section-head"><span class="product-kicker">Condiciones de compra</span><h2 class="section-title">Política de devoluciones y reembolsos</h2><p>Estas condiciones se aceptan al confirmar y pagar una compra directamente a BRASASOL.</p></div><div class="content-card-grid"><article class="content-card dark"><div class="content-card-body"><h3>No aceptamos devoluciones</h3><p>Todas las ventas son finales. Después de efectuado el pago no se aceptan devoluciones, cambios, cancelaciones ni reembolsos, incluyendo cambio de opinión, elección incorrecta, falta de espacio o incompatibilidad con las necesidades del cliente.</p></div></article><article class="content-card dark"><div class="content-card-body"><h3>Compra informada</h3><p>Antes de pagar, el cliente debe revisar y confirmar modelo, dimensiones, capacidad, materiales, accesorios incluidos, precio y condiciones de entrega. BRASASOL resolverá las dudas y podrá proporcionar fotografías o información adicional antes de la compra.</p></div></article><article class="content-card dark"><div class="content-card-body"><h3>Transporte bajo responsabilidad del cliente</h3><p>BRASASOL no se responsabiliza por golpes, pérdidas, retrasos, manipulación inadecuada ni otros daños ocasionados por la agencia de transporte después de recibir el producto para su traslado. Cualquier reclamo por transporte debe gestionarse directamente con dicha agencia.</p></div></article><article class="content-card dark"><div class="content-card-body"><h3>Revisión al recibir</h3><p>El cliente debe revisar el embalaje y el producto al momento de recibirlo o retirarlo. Si observa una incidencia, debe dejar constancia, tomar fotografías y presentar el reclamo inmediatamente ante el transportista.</p></div></article><article class="content-card dark"><div class="content-card-body"><h3>Pago y cancelaciones</h3><p>Realizar el pago confirma la aceptación definitiva del pedido y autoriza su preparación o fabricación. No se devolverá total ni parcialmente ningún importe una vez recibido el pago.</p></div></article><article class="content-card dark"><div class="content-card-body"><h3>Falla de fabricación</h3><p>La ausencia de devoluciones no impide solicitar una evaluación técnica ante una posible falla de fabricación. Esta revisión no cubre daños de transporte, uso incorrecto, modificaciones, desgaste ni manipulación de terceros.</p></div></article></div></div></section>
+        </main>
+        <?php cargar_componente('footer'); ?><?php cargar_componente('cookies'); ?>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
