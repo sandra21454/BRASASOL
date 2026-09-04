@@ -1,0 +1,45 @@
+<!-- BOTÓN DE COOKIES -->
+<button type="button"
+        class="btn btn-warning rounded-circle position-fixed bottom-0 start-0 m-3 shadow-lg"
+        style="width:56px; height:56px; z-index:1050;"
+        data-bs-toggle="modal"
+        data-bs-target="#cookiesModal"
+        aria-label="Configurar cookies">
+    <i class="bi bi-cookie fs-5"></i>
+</button>
+
+<!-- MODAL COOKIES -->
+<div class="modal fade" id="cookiesModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-white text-dark rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Preferencias de cookies</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        <p>
+            Usamos cookies para mejorar tu experiencia en BRASASOL. Puedes aceptarlas o configurar tus preferencias.
+        </p>
+
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" checked disabled>
+            <label class="form-check-label">Cookies esenciales</label>
+        </div>
+
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="cookiesAnaliticas">
+            <label class="form-check-label" for="cookiesAnaliticas">Cookies analíticas</label>
+        </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="cookiesMarketing">
+            <label class="form-check-label" for="cookiesMarketing">Cookies de marketing</label>
+        </div>
+        </div>
+        <div class="modal-footer border-0">
+        <button class="btn btn-outline-dark rounded-pill" data-bs-dismiss="modal">Rechazar</button>
+        <button class="btn btn-warning rounded-pill" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+    </div>
+    </div>
+</div>
