@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^robots\.txt$ robots.php [L,NC]
+    RewriteRule ^(?:database|storage|config|\.tmp)(?:/|$) - [F,L,NC]
+    RewriteRule (?:^|/)(?:\.env[^/]*|composer\.(?:json|lock)|[^/]+\.(?:sql|bak|dump|log|ini))$ - [F,L,NC]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always unset X-Powered-By
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https:; font-src 'self' data: https://cdn.jsdelivr.net https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com; connect-src 'self'"
+</IfModule>

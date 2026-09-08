@@ -1,0 +1,5 @@
+/config/database.local.php
+/config/database.production.php
+/storage/*.json
+/.tmp/*
+!/.tmp/.htaccess
